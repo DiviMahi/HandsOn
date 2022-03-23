@@ -1,0 +1,24 @@
+package Abstract;
+
+public class Casio implements Calculator {
+
+	@Override
+	public int add(int x, int y) {
+		// TODO Auto-generated method stub
+
+		return x + y;
+	}
+
+	@Override
+	public int sub(int x, int y) {
+		// TODO Auto-generated method stub
+		return x - y;
+	}
+
+	@Override
+	public long multi(long x, long y) {
+		// TODO Auto-generated method stub
+		return x * y;
+	}
+
+}
