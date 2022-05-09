@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<emp Emp_id="1">
+    <ad>
+        <area>Periya puthur</area>
+        <country>India</country>
+        <doorNo>3/539A</doorNo>
+        <pinCode>641697</pinCode>
+        <street>sowdeswari colony</street>
+    </ad>
+    <desg>CEO</desg>
+    <name>Divya</name>
+</emp>

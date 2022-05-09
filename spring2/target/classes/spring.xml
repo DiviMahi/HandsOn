@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+
+	<bean class="com.dv.spring2.Actress" name="As">
+
+		<property name="name">
+			<value>Samantha</value>
+		</property>
+		<property name="phno">
+			<value>9273126309</value>
+		</property>
+		<property name="BQuality">
+			<value>BestActress </value>
+		</property>
+		<property name="actor" ref="Ac1">
+		</property>
+	</bean>
+	<bean class="com.dv.spring2.Actor" name="Act">
+		<property name="name">
+			<value>Surya</value>
+		</property>
+		<property name="phno">
+			<value>7977938274</value>
+		</property>
+		<property name="BQuality">
+			<value>GoodHumanBeing</value>
+		</property>
+	</bean>
+
+	<bean class="com.dv.spring2.Actress" name="Ak">
+		<constructor-arg value="nayan" />
+		<constructor-arg value="09321909" />
+		<constructor-arg value="ironlady" />
+		<constructor-arg ref="Act" />
+	</bean>
+
+	<bean class="com.dv.spring2.Actor" name="Ac1">
+		<property name="name">
+			<value>Shaheer</value>
+		</property>
+		<property name="phno">
+			<value>79779274</value>
+		</property>
+		<property name="BQuality">
+			<value>GoodActor</value>
+		</property>
+	</bean>
+
+</beans>

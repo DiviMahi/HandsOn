@@ -1,0 +1,11 @@
+{
+  "name" : "Divya",
+  "desg" : "hw",
+  "add" : {
+    "no" : 539,
+    "street" : "perya puthur",
+    "city" : "CBE",
+    "country" : "India"
+  },
+  "Emp_id" : 1
+}

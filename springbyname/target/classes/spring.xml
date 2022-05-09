@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+
+	<!-- <bean class="com.dv.springbyname.Actor" name="Acto" autowire="byName"> 
+		<constructor-arg value="Shabir" /> <constructor-arg value="507547668" /> 
+		</bean> <bean class="com.dv.springbyname.Actress" name="Acr"> <constructor-arg 
+		value="Jothika" /> <constructor-arg value="73291712" /> </bean> <bean class="com.dv.springbyname.Actress" 
+		name="act"> <constructor-arg value="Alia" /> <constructor-arg value="7329171281" 
+		/> </bean> -->
+	<bean class="com.dv.springbyname.Actor" name="ac"
+		autowire="byType">
+		<property name="name" value="Shabir" />
+		<property name="phno" value="507547668" />
+	</bean>
+	<bean class="com.dv.springbyname.Actor" name="ac2">
+		<property name="name" value="Sha" />
+		<property name="phno" value="5547668" />
+	</bean>
+	<bean class="com.dv.springbyname.Actor" name="ac1"
+		autowire="byType">
+		<property name="name" value="Shaheer" />
+		<property name="phno" value="507547668" />
+	</bean>
+	<bean class="com.dv.springbyname.Actress" name="act">
+		<property name="name" value="Alia" />
+		<property name="phno" value="73292012" />
+
+	</bean>
+	<!-- <bean class="com.dv.springbyname.Actress" name="act"> <property name="name" 
+		value="Jothika" /> <property name="phno" value="73291712" /> </bean> -->
+</beans>
